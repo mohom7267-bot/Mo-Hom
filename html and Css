@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Mo Hom" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">MyPortfolio</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="burger" id="burger-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero-section">
+        <div class="hero-container">
+            
+            <div class="hero-image">
+                <img src="mira.jpg" alt="My Profile Picture">
+            </div>
+
+            <div class="hero-content">
+                <h1>Hello, I am <span class="highlight">Mo Hom</span></h1>
+                <p>Education, clear informaton , make a picture I build clean and beautiful web projects.</p>
+                <a href="#projects" class="btn">View My Work</a>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <h2>About Me</h2>
+        <div class="about-container">
+            <p>I am passionate about creating websites and learning new technologies. I enjoy solving problems and turning ideas into real code.</p>
+        </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+        <h2>My Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>Project One</h3>
+                <p>A beautiful web application built with modern technologies.</p>
+                <a href="#" class="project-link">Learn More →</a>
+            </div>
+            <div class="project-card">
+                <h3>Project Two</h3>
+                <p>A responsive website design with smooth animations.</p>
+                <a href="#" class="project-link">Learn More →</a>
+            </div>
+            <div class="project-card">
+                <h3>Project Three</h3>
+                <p>An interactive tool that helps users manage their daily tasks.</p>
+                <a href="#" class="project-link">Learn More →</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Get In Touch</h2>
+        <p>Have a project in mind or want to say hello? Send me a message!</p>
+        <form class="contact-form" onsubmit="event.preventDefault(); alert('Message sent successfully!');">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 MyPortfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#d15e5e;
+}
+
+/* Navbar */
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 80px;
+    background:#6994d4;
+}
+
+.logo{
+    color:white and blanchedalmond
+    font: size 14px;px;
+    font-weight:bold;
+}
+
+.nav-links{
+    list-style:none;
+    display:flex;
+}
+
+.nav-links li{
+    margin-left:25px;
+}
+
+.nav-links a{
+    color:white and blanchedalmond
+    text-decoration:none;
+    font-size:18px;
+}
+
+.nav-links a:hover{
+    color:yellow;
+}
+
+/* Hero Section */
+.hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:80px;
+}
+
+.hero-text{
+    width:50%;
+}
+
+.hero-text h1{
+    font-size:48px;
+    color:#333;
+}
+
+.hero-text p{
+    margin:20px 0;
+    font-size:20px;
+    color:#666;
+}
+
+.hero-text button{
+    padding:12px 30px;
+    background:#0d6efd;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:18px;
+}
+
+.hero-text button:hover{
+    background:#084298;
+}
+
+.hero-image{
+    width:45%;
+}
+
+.hero-image img{
+    width:100%;
+    border-radius:15px;
+}
+
+/* About Section */
+.about{
+    background:white;
+    padding:70px;
+    text-align:center;
+}
+
+.about h2{
+    font-size:36px;
+    margin-bottom:20px;
+}
+
+.about p{
+    max-width:700px;
+    margin:auto;
+    font-size:18px;
+    color:#555;
+    line-height:1.6;
+}
+
+/* Responsive */
+@media(max-width:768px){
+
+.hero{
+    flex-direction:column;
+    text-align:center;
+}
+
+.hero-text,
+.hero-image{
+    width:100%;
+}
+
+.hero-image{
+    margin-top:30px;
+}
+
+.navbar{
+    flex-direction:column;
+}
+
+.nav-links{
+    margin-top:15px;
+}
